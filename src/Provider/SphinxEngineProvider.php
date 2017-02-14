@@ -1,6 +1,7 @@
 <?php
 namespace Hocnt\LaravelScoutSphinx\Provider;
 
+use Hocnt\LaravelScoutSphinx\Engine\SphinxEngine;
 use Illuminate\Support\ServiceProvider as Provider;
 use Laravel\Scout\EngineManager;
 
@@ -9,7 +10,7 @@ class SphinxEngineProvider extends Provider
     public function boot()
     {
         resolve(EngineManager::class)->extend('sphinxsearch', function ($app) {
-            return new Engine(config('scout.sphinx'));
+            return new SphinxEngine(config('scout.sphinx'));
         });
     }
 
