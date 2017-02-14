@@ -22,7 +22,7 @@ class SphinxEngineProvider extends Provider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/scout.php' => config_path('scout.php'),
+                __DIR__ . '/../../config/scout.php' => config_path('scout.php'),
             ]);
         }
     }
