@@ -1,0 +1,14 @@
+{
+    "name": "hocnt/laravel-scout-sphinx",
+    "require": {
+        "laravel/scout": "^3.0",
+        "foolz/sphinxql-query-builder": "^1.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hocnt",
+            "email": "hocnt84@gmail.com"
+        }
+    ]
+}
