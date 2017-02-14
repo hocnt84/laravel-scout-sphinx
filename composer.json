@@ -10,5 +10,10 @@
             "name": "hocnt",
             "email": "hocnt84@gmail.com"
         }
-    ]
+    ],
+    "autoload":{
+        "psr-4":{
+            "Hocnt\\LaravelScoutSphinx\\":"src/"
+        }
+    }
 }
