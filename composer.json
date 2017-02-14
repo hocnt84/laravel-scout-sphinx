@@ -1,27 +1,21 @@
 {
     "name": "hocnt/laravel-scout-sphinx",
-    "description": "",
+    "description": "sphinxsearch engine for scout laravel.",
+    "type": "library",
+    "keywords": ["sphinxsearch", "laravel", "search"],
+    "license": "MIT",
+    "authors": [{
+        "name": "hocnt",
+        "email": "hocnt84@gmail.com"
+    }],
     "require": {
         "laravel/scout": "^3.0",
         "foolz/sphinxql-query-builder": "^1.1"
     },
-    "keywords": [
-        "sphinxsearch",
-        "laravel",
-        "search"
-    ],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "hocnt",
-            "email": "hocnt84@gmail.com"
-        }
-    ],
-    "autoload":{
-        "psr-4":{
-            "Hocnt\\LaravelScoutSphinx\\":"src/"
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Hocnt\\LaravelScoutSphinx\\": "src/"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true
 }
