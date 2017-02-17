@@ -77,13 +77,16 @@ class SphinxEngine extends AbstractEngine
             return;
         }
 
-        $example = $models->first();
-        $index   = $example->searchableAs();
-        $key     = $example->getKey();
+        $model = $models->first();
+        $index = $model->searchableAs();
+        $key   = $models->pluck($model->getKeyName())
+            ->values()->all();
+
         SphinxQL::create($this->connections)
             ->delete()
             ->from($index)
-            ->where('id', 'IN', $key);
+            ->where('id', 'IN', $key)
+            ->execute();
     }
 
     /**
