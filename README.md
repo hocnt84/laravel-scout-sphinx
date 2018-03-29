@@ -1,5 +1,5 @@
 # laravel-scout-sphinx
-Installation
+## Installation
 You can install this package via composer using this command:
 ```
 composer require hocnt/laravel-scout-sphinx
